@@ -1,6 +1,6 @@
-# media-production-pipeline
-
 This is an attempt to document and outline a bare-bones, minimal-overhead pipeline for generating multimedia content and sharing it across a limited handful of useful networks.
+
+![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/k5mdbue1ckqcejoo6e3r.jpg)
 
 There are effectively five steps, each of which leverages the previous steps.
 
@@ -10,11 +10,13 @@ This process is the result of an attempt to keep myself accountable to writing m
 
 ### GitHub
 
-The first action is typically GitHub. Most of this content is technically-oriented and invovles some degree of software engineering. Even topics that don't (such as this one) will have some sort of a writeup (Markdown, more often than not) that benefits from version control.
+The first action is typically GitHub. Most of this content is technically-oriented and involves some degree of software engineering. Even topics that don't (such as this one) will have some sort of a writeup (Markdown, more often than not) that benefits from version control.
 
 ### Dev.to
 
 This is basically where my dev blog lives now. It's nicely compatible with Markdown and works well with other networks. The signal-to-noise isn't too low and it's a responsive & streamlined experience. This effectively generates an authoritative publication of the README content from the GitHub project, which it cites, including other helpful diagrams; explanations; and other walkthroughs.
+
+This is a good time to point out that I try to keep this acyclic. That is, I typically don't refer to downstream stages in an upstream stage. But a lof of the modifications I make to the article when uploading it to Dev.to are useful (like images, in particular) and I find it's useful to go back and re-upload the README to GitHub to make sure these are included there, too.
 
 ### Twitch.tv
 
@@ -26,6 +28,8 @@ With the right settings, Twitch will store a VOD you can download and process. I
 
 Specifically, in OpenShot and Audacity, I splice off the audio channel for some processing. This typically looks something like 1) noise reduction, 2) normalization, 3) click removal, and 4) pass filtering. Otherwise the YouTube content just isn't as consumable and I find it to be very annoying to listen to myself when I have to crank up the volume! It would be nice if more of these was included in the YouTube upload processing, but it isn't.
 
+Once the audio channel has been processed, I splice it back into the video in OpenShot and render it to a standard format for upload.
+ 
 ### Twitter
 
 Once the YouTube content is up, I'm ready to share the content on a general-purpose social network. This typically involves a link to the YouTube upload and the Dev.to article, both of which have excellent integration. The YouTube channel can link back to the Twith stream, and the Dev.to article already has a link to the GitHub. This provides a good record and means from which to share and broadcast any content follow-on (like comments or sequels), and is where most of the sharing and exposure takes place.
@@ -35,5 +39,3 @@ Once the YouTube content is up, I'm ready to share the content on a general-purp
 I find the "compression ratio"--that is, the time you spend to make one unit (say, minute) of video--can vary wildly in general. The purpose of this particualr pipeline is to get that ratio as low as possible while still sharing not-entirely-devoid-of-value content. For purposes of consumption, I find this means a YouTube video between 20-40 minutes, which takes an extra 30 minutes to process. That comes from an article that is probably 1000-2000 words in length and takes 1-2 hours to write up. The original GitHub project (depending on the topic) is where there is the most variance, but if I'm effectively recreating something I've already learned or done this could be as little as 1-2 hours for something I'm okay sharing in public (e.g., polish).
 
 All in all, this means a half-day's work for a single publication, from start to finish (not including any learning time or other research for the initial project / technology), which honestly isn't bad at all.
-
-
